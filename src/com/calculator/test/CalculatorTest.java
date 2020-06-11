@@ -40,5 +40,15 @@ class CalculatorTest {
 		int sum = stringCalculator.add(input);
 		assertEquals(sum, 31);
 	}
+	
+	
+	
+	@Test
+	void addHandleNewLinesTest() {
+		StringCalculator stringCalculator = new StringCalculator();
+		String input = "1\n2,3";
+		int sum = stringCalculator.add(input);
+		assertEquals(sum, 6);
+	}
 
 }
