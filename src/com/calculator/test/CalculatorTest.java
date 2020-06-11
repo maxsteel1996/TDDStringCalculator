@@ -31,5 +31,14 @@ class CalculatorTest {
 		int sum = stringCalculator.add(input);
 		assertEquals(sum, 3);
 	}
+	
+	
+	@Test
+	void addUnknownAmountInputTest() {
+		StringCalculator stringCalculator = new StringCalculator();
+		String input = "1,2,4,7,8,9";
+		int sum = stringCalculator.add(input);
+		assertEquals(sum, 31);
+	}
 
 }
